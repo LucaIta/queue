@@ -1,0 +1,26 @@
+<h2>Queue</h2>
+{{#if firstQuestion}}
+<p>
+  Have you gone through all the steps on the Learn How to Program debugging lesson?
+</p>
+<button {{action 'showSecond'}}>Yes >></button>
+{{else if secondQuestion}}
+<p>
+  Have you asked another pair for help?
+</p>
+<button {{action 'showThird'}}>Yes >></button>
+{{else if thirdQuestion}}
+<p>
+  Have you spent 15 minutes going through through the problem documenting every step?
+</p>
+<button {{action 'showForm'}}>Yes >></button>
+{{else}}
+<form >
+  {{input type="text" value=name id="name" placeholder="Please enter your name"}}
+  <br>
+  {{input type="text" value=location id="location" placeholder="Please enter your location"}}
+  <br>
+  {{textarea value=description id="description" rows="5" placeholder="Give a brief desciption of issue you are having."}}
+  <button {{action 'helpButton'}}>Help!</button>
+</form>
+{{/if}}
