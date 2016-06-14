@@ -1,0 +1,41 @@
+
+footer.linkFooter {
+  margin-bottom: 1px;
+}
+
+body {
+  background-color: #ecf0f1;
+  font-family: sans-serif;
+  text-align: center;
+  /*padding-top: 50px;*/
+}
+p, form{
+  margin-top: 20%;
+}
+
+h2 {
+  font-family: 'Nixie One', cursive;
+}
+
+.page-header {
+  /*border-bottom: 1px solid #ccc;*/
+  margin: 0px auto;
+  margin-top: 0;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background-color: #f05a26;
+  color: #fefefe;
+}
+
+
+.col-xs-8 {
+  text-align: center;
+}
+button {
+  padding: 9px;
+  background-color: #f05a26;
+  color: #fefefe;
+}
+li {
+  margin-top: 20%;
+}

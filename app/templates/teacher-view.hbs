@@ -1,0 +1,4 @@
+<!-- {{#each model as |ticket|}}
+  <li>{{#link-to 'ticket-detail' ticket.id}} time passed: {{time-calculator}} {{ticket.location}} {{/link-to}} {{ticket.name}}</li>
+{{/each}} -->
+{{time-calculator tickets=model}}

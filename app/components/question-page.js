@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import moment from 'moment';
 
 export default Ember.Component.extend({
   firstQuestion: true,
@@ -20,10 +21,10 @@ export default Ember.Component.extend({
       var params= {
         name: this.get('name'),
         location: this.get('location'),
-        description: this.get('description')
+        description: this.get('description'),
+        date: moment().format()
       };
       this.sendAction('savedQuestion', params);
-      this.transitionTo('index');
     }
   }
 });

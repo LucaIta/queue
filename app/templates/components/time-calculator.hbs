@@ -1,0 +1,4 @@
+{{#each tickets as |ticket|}}
+  <li>{{#link-to 'ticket-detail' ticket.id}}  {{ticket.location}} {{/link-to}} time passed: {{timePassed}} {{ticket.name}}</li>
+{{/each}}
+<!-- {{timeDifference}} -->
